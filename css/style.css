@@ -1,0 +1,636 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/*-------------------------
+------  Main --------
+-------------------------*/
+
+.Home {
+    background-image: url(../img/Standaard/BackgroundHome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.Work {
+    background-image: url(../img/Standaard/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-family: 'Poiret One', cursive;
+}
+
+h2, #button, #phoneMenu {
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+                                                                            /*------- Home ------------*/
+
+/*-------------------------
+--------- Menu -----------
+-------------------------*/
+
+/*------ Phone ------*/
+
+.menu {
+    display: none;
+}
+
+#phoneMenu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: #000;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#phoneMenu ul {
+    padding: 0;
+}
+
+#phoneMenu li {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    line-height: 100px;
+}
+
+#phoneMenu a {
+    text-decoration: none;
+    display: block;
+}
+
+#phoneMenu a:hover, .phoneMenuActive {
+    color: #e95106;
+}
+
+.phoneMenuActive, .navigation .phoneMenuActive {
+    color: #e95106;
+}
+
+#phoneMenu a:hover {
+    background-color: #0d0d0d;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.phoneHeader {
+    background: black;
+    height: 80px;
+    background-color: #000;
+}
+
+#phoneMenuClose img {
+    float: right;
+    width: 30px;
+    margin: 20px 20px;
+}
+
+/*-------------------------
+------ Logo's --------
+-------------------------*/
+
+.Logo {
+    margin: 0 30% 0 30%;
+}
+
+.Logo img {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.LogoPhone {
+    display: none;
+}
+
+/*-------------------------
+------  Buttons --------
+-------------------------*/
+
+#button {
+    font-size: 200%;
+    text-align: center;
+    width: 100%;
+    margin: 250px auto 0;
+}
+
+#button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #e95106;
+    border: 7px solid #e95106;
+    border-radius: 5px;
+}
+
+#button a:hover {
+    background-color: transparent;
+}
+
+
+
+
+                                                                    
+
+/*-------------------------
+------  Nav --------
+-------------------------*/
+
+.navigation {
+    position: relative;
+    left: -52px;
+    width: 600px;
+    max-width: 100%;
+	height: 120px;
+	-webkit-transform: skew(-220deg);
+    background: black;
+    opacity: 0.9;
+}
+
+.LogoNav {
+    position: absolute;
+    width: 140px;
+    margin-top: -5px;
+    margin-left: 535px;
+    z-index: 2;
+    -webkit-transform: skew(220deg);
+    opacity: 0.9;
+}
+
+/*Strip the ul of padding and list styling*/
+.navigation ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+    margin-left: 40px;
+}
+
+/*Create a horizontal list with spacing*/
+.navigation li {
+	display: inline-block;
+	float: left;
+}
+
+.navigation li:nth-child(1) {
+    margin-left: 39px;
+}
+
+/*Style for menu links*/
+.navigation li a {
+	display:block;
+    padding: 35px 20px;
+	text-align: center;
+	line-height: 50px;
+    font-size: 130%;
+	color: #fff;
+	text-decoration: none;
+    -webkit-transform: skew(220deg);
+}
+
+/*Hover state for top level links*/
+.navigation li:hover a, .navigation .Active {
+    color: #e95106;
+}
+
+/*Style for dropdown links*/
+.navigation li:hover ul a {
+	background: rgb(0, 0, 0);
+    opacity: 0.9;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.navigation li:hover ul a:hover {
+	color: #e95106;
+}
+
+/*Hide dropdown links until they are needed*/
+.navigation li ul {
+	display: none;
+    width: 500px;
+    margin-left: 0;
+}
+
+/*Make dropdown links vertical*/
+.navigation li ul li {
+	display: block;
+    float: left;
+}
+
+/*Prevent text wrapping*/
+.navigation li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+.navigation ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*-------------------------
+------  CONTENT --------
+-------------------------*/
+
+.skill, .containerContact, .introduction {
+    background-color: rgba(33, 33, 33, 0.55);
+    border: 3px solid rgba(0, 0, 0, 0.55);
+}
+
+.content {
+    width: 90%;
+    margin: 90px 5%;
+}
+
+                                                                        /*------- My Work ------------*/
+
+.work {
+    display: block;
+    width: 80%;
+    height: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+.work img {
+    width: 100%;
+    border: 5px solid black;
+    margin-bottom: 7%;
+}
+
+.work a:hover {
+    opacity: 0.8;
+}
+
+
+
+.photoshop {
+    width: 90%;
+    margin: 90px 7% 150px;
+}
+
+.photoshop img {
+    height: 450px;
+    border: 5px solid black;
+    margin: auto 0 5% 4%;
+    align-content: center;
+}
+
+
+                                                                        /*------- My skills ------------*/
+
+.skill {
+    max-width: 500px;
+    max-height: 538.813px;
+    margin: 0 5% 5% 0;
+    float: left;
+    display: inline-block;
+}
+
+.skill:nth-child(3n) {
+    margin-right: 0;
+}
+
+.skill:last-child {
+    margin-bottom: 150px;
+}
+
+.skill h2, .work h2, .introduction h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.skill img {
+    width: 60%;
+    margin: 30px 20%;
+}
+
+
+
+.skillbar {
+    position: relative;
+	display:block;
+	width:80%;
+    margin: 5% 10%;
+	background:rgba(255, 255, 255, 0.7);
+	height:35px;
+	border-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	border-radius:3px;
+
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:0.01;
+	height:35px;
+	line-height:35px;
+	color:#000;
+}
+.een{background: #d35400;}
+
+.een1{background: #e67e22;}
+
+
+
+                                                                        /*------- My skills ------------*/
+
+.introduction {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.introduction img {
+    width: 30%;
+    margin: 40px 35%;
+}
+
+.introduction p {
+    font-size: 150%;
+    color: white;
+    text-align: center;
+}
+
+.introduction p:last-child {
+    margin-bottom: 40px;
+}
+
+
+                                                                        /*------- Contact ------------*/
+
+.content h1 {
+    text-align: center;
+    width: 100%;
+    margin: 50px auto 0;
+    font-size: 300%;
+}
+
+.containerContact {
+    width: 70%;
+    margin: 70px auto;
+}
+
+.containerContact h2 {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.containerContact p {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.containerContact p a {
+    color: white;
+    text-decoration: none;
+}
+
+.containerContact p a:hover {
+    color: #e95106;
+}
+
+.socialMedia {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 10px;
+    box-shadow: 0px -3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.socialMedia img {
+    width: 40px;
+}
+
+
+
+/*-------------------------
+------  Footer --------
+-------------------------*/
+
+#foot {
+    position: relative;
+    width: 100%;
+}
+
+footer, footer h2, footer img, footer p {
+    position: fixed;
+}
+
+footer {
+    bottom: 0;
+    right: -41px;
+    -webkit-transform: skew(-220deg);
+    background: black;
+    opacity: 0.9;
+    height: 100px;
+    width: 600px;
+    position: absolute;
+}
+
+footer h2 {
+    color: #e95106;
+    -webkit-transform: skew(220deg);
+    bottom: 34px;
+    font-size: 300%;
+    right: 45%;
+}
+
+footer img {
+    -webkit-transform: skew(220deg);
+    width: 5%;
+    bottom: 32px;
+    right: 84%;
+}
+
+footer img:nth-child(2) {
+    right: 44%;
+    bottom: 35px;
+}
+
+footer p {
+    color: white;
+    -webkit-transform: skew(220deg);
+    bottom: 20px;
+    right: 56%;
+}
+
+footer p:nth-child(3) {
+    right: 11%;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #e95106;
+}
+
+
+
+
+
+
+
+/*-------------------------
+------  Responsive --------
+-------------------------*/
+
+/*---- IPAD ----*/
+
+/*---- GSM ----*/
+
+@media screen and (max-width: 640px) {
+    
+    /*---- STANDAARD ----*/
+    
+    .menu {
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: 60px;
+        opacity: 0.9;
+    }
+    
+    /*---- HOME ----*/
+    
+    .menu img {
+        width: 40px;
+        margin: 10px 45%;
+    }
+    
+    .LogoPhone {
+        display: block;
+        margin: 0 40% 0 20%;
+    }
+    
+    .LogoPhone img {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 30%;
+        width: 150%;
+    }
+    
+    .Logo {
+        display: none;
+    }
+    
+    #button {
+        margin: 30% auto 10%;
+    }
+    
+    /*---- WORK ----*/
+    
+    .navigation, .navigation img, footer {
+        display: none;
+    }
+    
+    .skill:last-child {
+        margin-bottom: 5%;
+    }
+    
+    .skill:nth-child(3n) {
+        margin-right: 5%;
+    }
+    
+    .skill {
+        margin: 0 5% 5% 5%;
+    }
+    
+    .introduction {
+        width: 90%;
+    }
+    
+    .introduction img {
+        width: 50%;
+        margin: 5% 25%;
+    }
+    
+    .photoshop img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1285px) and (max-width: 1895px) {
+
+    .skill {
+        margin: 0 5% 5% 5%;
+    }
+    
+    .skill:nth-child(3n) {
+        margin-right: 5%;
+    }
+    
+}
+
+@media (min-width: 640px) and (max-width: 1285px) {
+
+    .skill {
+        margin: 0 5% 5% 25%;
+    }
+    
+    .skill:nth-child(3n) {
+        margin-right: 5%;
+    }
+}
+
+/*========================
+======    CLEARFIX    ======
+========================*/
+
+
+.cfx:before,  
+.cfx:after {  
+    content: " ";  
+    display: table;  
+}  
+.cfx:after {  
+    clear: both;  
+}
