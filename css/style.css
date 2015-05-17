@@ -72,6 +72,13 @@ p {
     line-height: 100px;
 }
 
+#phoneMenu li:nth-child(4),#phoneMenu li:nth-child(5), #phoneMenu li:nth-child(6) {
+ 
+    font-size: 120%;
+    line-height: 70px;
+    background-color: #0d0d0d;
+}
+
 #phoneMenu a {
     text-decoration: none;
     display: block;
