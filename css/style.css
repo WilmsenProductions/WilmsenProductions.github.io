@@ -72,7 +72,7 @@ p {
     line-height: 100px;
 }
 
-#phoneMenu li:nth-child(4),#phoneMenu li:nth-child(5), #phoneMenu li:nth-child(6) {
+#phoneMenu li:nth-child(3),#phoneMenu li:nth-child(4), #phoneMenu li:nth-child(5) {
  
     font-size: 120%;
     line-height: 70px;
